@@ -9,7 +9,7 @@ int main() {
     for(int i=0; i<n; i++){
         cin >>arr[i];
     }
-    int min=1000;
+    int min=100000;
     int sum=0;
     int k;
     for(int i=0; i<n; i++){
