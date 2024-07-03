@@ -11,20 +11,19 @@ int main() {
             cin >>arr[i][j];
         }
     }
-    int k=0;
+    int num=0;
     int max=0;
     for(int i=0; i<n; i++){
         for(int j=0; j<n-2; j++){
-            for(int k=j; k<j+2; k++){
+            for(int k=j; k<j+3; k++){
                 if(arr[i][k]==1){       
-                    k++;
-                    if(max<k){
-                        max=k;
-                    }
+                    num++;
                 }
             }
-            k=0;
-            
+            if(max<num){
+                max=num;
+            }
+            num=0;
         }
     }
     cout << max;
